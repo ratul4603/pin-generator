@@ -1,0 +1,143 @@
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    background-color: #10101B;
+    height:100vh;
+    width:100%;
+    text-align:center;
+}
+.container{
+    height:80vh;
+    padding:10px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.first, .second{
+    width:40%;
+    background-color: #222436;
+    height:80vh;
+    margin:5px;
+    text-align:center;
+    margin-top:50px;
+}
+.third{
+    height:7vh;
+    width:500px;
+    margin:45px auto;
+}
+.container #gnPin-inp, #mtch-inp{
+    max-width:450px;
+    height:50px;
+    border:2px solid #858299;
+    outline:none;
+    margin:30px;
+    padding:9px;
+    border-radius:8px;
+    background-color: #3D4153;
+    color:white;
+    font-size:18px;
+}
+.container #gnPin-btn{
+    width:220px;
+    height:220px;
+    border:solid 8px #39458C;
+    outline:none;
+    border-radius:50%;
+    background-color:#495BC3;
+    color:tomato;
+    font-size:22px;
+    font-weight:bold;
+    margin:40px;
+    text-transform:uppercase;
+    line-height:30px;
+    letter-spacing:2px;
+    text-align:center;
+}
+span{
+    font-size:20px;
+    color:white;
+    letter-spacing:5px;
+}
+.btn{
+    border:none;
+    outline:none;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:3%;
+    background-color: aqua;
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+}
+.btn:hover{
+    background-color: rgb(191, 255, 234);;
+}
+#sbmit-btn{
+    border:none;
+    outline:none;
+    padding:13px 80px;
+    margin:30px 0 15px 0;
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing:3px;
+    background-color: rgb(90, 1, 174);
+    border-radius:7px;
+    color:white;
+    opacity:.5;
+}
+#sbmit-btn:hover{
+    opacity:1;
+}
+
+.msg-style{
+    width:100%;
+    height:40px;
+    background-color:#222436;
+    border:solid 1px white;
+    border-radius:8px;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossBtn{
+    background-color:white;
+    color:red;
+    border:solid 1px gray;
+    padding:3px 5px;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:16px;
+}
+
+@media screen and (max-width:800px){
+    .main-container{
+        height:auto;
+        padding-bottom:10px;
+    }
+    .container{
+        height:auto;
+        flex-direction: column;
+    }
+    .first, .second{
+        width:90%;
+        height:85vh;
+        margin-top:40px;
+    }
+    .third{
+        width:370px;
+        margin:25px auto;
+    }
+    .crossBtn{
+        margin-left:4px;
+    }
+}
