@@ -130,7 +130,7 @@ span{
     }
     .first, .second{
         width:90%;
-        height:85vh;
+        height:auto;
         margin-top:40px;
     }
     .third{
